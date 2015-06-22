@@ -18,6 +18,7 @@ public static void main(String[] args) throws IOException {
 	FileReader fr=new FileReader(file);
 	BufferedReader br = new BufferedReader(fr);
 	
+	
 	System.out.print(br.readLine());
 	for(int i=1;i<34;i++)
 	{

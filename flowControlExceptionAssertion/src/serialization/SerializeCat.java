@@ -10,12 +10,13 @@ import java.io.Serializable;
 
 
 class Cat implements Serializable{
-	
+	int number;
 }
 public class SerializeCat {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Cat c=new Cat();
+		c.number=10;
 		FileOutputStream fs=new FileOutputStream("catSer.ser");
 	    ObjectOutputStream os=new ObjectOutputStream(fs);
 	    os.writeObject(c);
@@ -28,6 +29,6 @@ public class SerializeCat {
 	    
 	    System.out.println(c==c1);
 	    System.out.println(c.equals(c1));
-	    
+	    System.out.println(c1.number);
 	}
 }
