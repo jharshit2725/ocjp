@@ -15,6 +15,13 @@ public static void main(String[] args) {
 	
 	System.out.println(eq1==eq2);
 	System.out.println(eq1.equals(eq2));
+	
+	EqualMethod eq3=eq2;
+	
+	System.out.println(eq3==eq2);
+	System.out.println(eq3.equals(eq2));
+	
+	System.out.println(eq1.hashCode()+" "+eq2.hashCode()+" "+eq3.hashCode());
 }	
 }
 
